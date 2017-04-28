@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     width: width,
-    backgroundColor: '#fff',
+    backgroundColor: '#ff9900',
     shadowColor: '#e3e3e3',
     shadowOpacity: 0.9
   },

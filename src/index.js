@@ -4,14 +4,20 @@ import {
   StyleSheet,
   Text,
   TextInput,
-  View
+  View,
+  Button
  } from 'react-native';
 
  // Components
  import NavBar from './components/navBar';
 
 export default class AppContainer extends Component {
-
+  leftPress() {
+    console.log('yayah');
+  }
+  onPress() {
+    console.log('CLICK :D');
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -20,8 +26,14 @@ export default class AppContainer extends Component {
           title = "Inicio"
           leftText = "1"
           rightText = "2"
+          onLeftPress = {this.onleftPress}
           containerStyle={{backgroundColor: '#303030'}}
-          colorText='#eee' />
+          colorText='#ff9900' />
+        <Button 
+          onPress={this.onPress}
+          title="Hello" 
+          color="#FFFFFF" 
+          accessibilityLabel="Tap on Me"/>
       </View>
     )
   }
