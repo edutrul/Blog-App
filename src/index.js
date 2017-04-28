@@ -34,6 +34,11 @@ export default class AppContainer extends Component {
           title="Hello" 
           color="#FFFFFF" 
           accessibilityLabel="Tap on Me"/>
+         <Button 
+          onPress={this.onPress.bind(this)}
+          title="Hello" 
+          color="#FFFFFF" 
+          accessibilityLabel="Tap on Me"/>
       </View>
     )
   }
