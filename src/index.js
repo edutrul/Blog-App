@@ -5,7 +5,8 @@ import {
   Text,
   TextInput,
   View,
-  Button
+  Button,
+  Alert
  } from 'react-native';
 
  // Components
@@ -16,7 +17,7 @@ export default class AppContainer extends Component {
     console.log('yayah');
   }
   onPress() {
-    console.log('CLICK :D');
+    Alert.alert('on Press!');
   }
   render() {
     return (
