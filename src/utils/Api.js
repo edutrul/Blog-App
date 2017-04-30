@@ -7,20 +7,49 @@ export default class Api {
     return fetch(url)
     .then(response => response.json())
     .then(json     => {
-      const images = [
-        "https://images.unsplash.com/photo-1441311956160-78a471e0638d?dpr=2&auto=format&fit=crop&w=500&h=500&q=80&cs=tinysrgb&crop=",
-        "https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?dpr=2&auto=format&fit=crop&w=200&h=200&q=80&cs=tinysrgb&crop=",
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?dpr=2&auto=format&fit=crop&w=200&h=200&q=80&cs=tinysrgb&crop=",
-        "https://images.unsplash.com/photo-1481487196290-c152efe083f5?dpr=2&auto=format&fit=crop&w=200&h=200&q=80&cs=tinysrgb&crop="
+      const data = [
+        {
+          "title": "El Gallo kiko",
+          "body": "En las cálidas mañanas de verano, el gallo Kiko es el primero en despertarse. Abre sus pequeños ojos, sacude sus plumas y saluda al Sol. Después, sube al palo más alto del gallinero para que todo el mundo lo vea. Sabe que su trabajo es uno de los más importantes de la granja: despertar con su kikirikí a todos los animales.",
+          "image": "https://s17.postimg.org/87fbxdyqn/gallo-kiko-hackathon-edtech.png",
+          "speaker": "Eduardo Telaya",
+          "comments": 34,
+          "likes": 28
+        },
+        {
+          "title": "El Gallo kiko",
+          "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+          "image": "https://s17.postimg.org/87fbxdyqn/gallo-kiko-hackathon-edtech.png",
+          "speaker": "Eduardo Telaya",
+          "comments": 34,
+          "likes": 28
+        },
+        {
+          "title": "El Gallo kiko",
+          "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+          "image": "https://s17.postimg.org/87fbxdyqn/gallo-kiko-hackathon-edtech.png",
+          "speaker": "Eduardo Telaya",
+          "comments": 34,
+          "likes": 28
+        },
+        {
+          "title": "El Gallo kiko",
+          "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+          "image": "https://s17.postimg.org/87fbxdyqn/gallo-kiko-hackathon-edtech.png",
+          "speaker": "Eduardo Telaya",
+          "comments": 34,
+          "likes": 28
+        },
       ];
       let count = 0;
-
       for (var i in json) {
         count = count > 3 ? 0 : count;
-        json[i]['imageUrl'] = images[count];
-        json[i]['speaker'] = 'John Machahuay';
-        json[i]['comments'] = 230;
-        json[i]['likes'] = 20;
+        json[i]['title'] = data[count].title;
+        json[i]['body'] = data[count].body;
+        json[i]['imageUrl'] = data[count].image;
+        json[i]['speaker'] = data[count].speaker;
+        json[i]['comments'] = data[count].comments;
+        json[i]['likes'] = data[count].likes;
         count++;
       }
       return json;

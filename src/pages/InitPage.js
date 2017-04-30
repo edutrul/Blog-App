@@ -22,7 +22,7 @@ const InitPage = ({navigator}) => {
       entries={[
         {
           id: itemId++,
-          title: 'Home',
+          title: 'Inicio',
           element: <NewsPage navigator={navigator} title='Home' />,
           androidIcon: <Icon name="description" size={androidIconSize} />,
           itemComponent: Ionicon.TabBarItem,
@@ -35,7 +35,7 @@ const InitPage = ({navigator}) => {
         },
         {
           id: itemId++,
-          title: 'News',
+          title: 'Noticias',
           element: <NewsPage navigator={navigator} title='News' />,
           androidIcon: <Icon name="access-time" size={androidIconSize} />,
           itemComponent: Ionicon.TabBarItem,
@@ -46,7 +46,7 @@ const InitPage = ({navigator}) => {
         },
         {
           id: itemId++,
-          title: 'Favorite',
+          title: 'Favorito',
           element: <NewsPage navigator={navigator} title='Favorite' />,
           androidIcon: <Icon name="favorite" size={androidIconSize} />,
           itemComponent: Ionicon.TabBarItem,

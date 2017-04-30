@@ -12,7 +12,6 @@ import PostList from './../components/PostList';
 
 // Pages
 import AboutUsPage from './AboutUsPage';
-
 // Utils
 import Api from './../utils/Api';
 
