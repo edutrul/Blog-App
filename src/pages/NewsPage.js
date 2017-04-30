@@ -5,6 +5,8 @@ import { ActivityIndicator, Alert, BackAndroid, ListView, Platform, StyleSheet, 
 // External Libraries
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { RadioButtons } from 'react-native-radio-buttons'
+
 
 // Components
 import NavBar from './../components/NavBar';
@@ -59,6 +61,7 @@ class NewsPage extends Component {
   }
 
   render() {
+
     const { posts, loading } = this.state;
     _navigator = this.props.navigator;
 

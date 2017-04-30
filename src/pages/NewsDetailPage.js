@@ -34,6 +34,8 @@ const NewsDetailPage = ({navigator, item}) => {
           <Text style={styles.description}>
             { item.body }
           </Text>
+          
+          
           <NavBar
             leftText={Platform.OS === 'ios' ? <Ionicon name='ios-arrow-back' size={32} color={'#eee'} /> : <Ionicon name='md-arrow-back' size={24} color={'#eee'} />}
             onLeftPress={ () => {
